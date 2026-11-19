@@ -210,7 +210,7 @@ def row_geometry_descriptor(
         table = {}
         for label in order:
             canonical = setting.wyckoff(representative_of[label])
-            matrix = np.zeros((3, 3), dtype=np.float64)
+            matrix: npt.NDArray[np.float64] = np.zeros((3, 3), dtype=np.float64)
             for i, coordinate_row in enumerate(canonical.coordinate_matrix):
                 matrix[i] = [float(value) for value in coordinate_row]
             values = [
