@@ -1,0 +1,34 @@
+seeds analysed: [20261030, 20261031, 20261032] (all registered seeds)
+records 50
+model fields differing from the cover run:
+   control {} options default
+   smooth {'geometry_pair_carrier_smoothing_length': [None, 0.2]} options carrier-smoothing
+
+per arm and seed: N (no structure), S01, S5, C = N + S01, I = N + S5, failed stages
+  s20261030 control N   5 S01   0 S5  39 C   5 I  44 {'geometry/decode': 5} | replay match/attempt 0.0820 @20 13 @1 3 table-given {'rate': 0.9772727272727273, 'successes': 43, 'trials': 44, 'wilson_95': [0.8819229030178671, 0.9959767479399467]} | oracle match/draw 0.4430 any 32 first 25 rms 0.0559706920903528 oracle dist {'at_most_0.01': 0, 'at_most_0.1': 0, 'at_most_0.5': 22, 'attempts': 1000, 'structurally_valid': 975, 'without_structure': 3} | selected {'cfm_regression': 9.523490031719776, 'epoch': 151, 'phase_epoch': 150, 'weights': 'ema'}
+  s20261030 smooth  N   1 S01   1 S5  46 C   2 I  47 {'geometry/decode': 1} | replay match/attempt 0.0820 @20 13 @1 3 table-given {'rate': 0.9772727272727273, 'successes': 43, 'trials': 44, 'wilson_95': [0.8819229030178671, 0.9959767479399467]} | oracle match/draw 0.4440 any 31 first 25 rms 0.055844735262348746 oracle dist {'at_most_0.01': 1, 'at_most_0.1': 4, 'at_most_0.5': 30, 'attempts': 1000, 'structurally_valid': 970, 'without_structure': 0} | selected {'cfm_regression': 9.48087593677541, 'epoch': 151, 'phase_epoch': 150, 'weights': 'ema'}
+  s20261031 control N   3 S01   0 S5  46 C   3 I  49 {'geometry/decode': 3} | replay match/attempt 0.0840 @20 14 @1 3 table-given {'rate': 0.9772727272727273, 'successes': 43, 'trials': 44, 'wilson_95': [0.8819229030178671, 0.9959767479399467]} | oracle match/draw 0.4320 any 32 first 24 rms 0.06666321966999192 oracle dist {'at_most_0.01': 0, 'at_most_0.1': 0, 'at_most_0.5': 26, 'attempts': 1000, 'structurally_valid': 969, 'without_structure': 5} | selected {'cfm_regression': 8.852125370341454, 'epoch': 126, 'phase_epoch': 125, 'weights': 'ema'}
+  s20261031 smooth  N   0 S01   2 S5  53 C   2 I  53 {'evaluation/coincident-atoms': 2} | replay match/attempt 0.0860 @20 14 @1 3 table-given {'rate': 0.9772727272727273, 'successes': 43, 'trials': 44, 'wilson_95': [0.8819229030178671, 0.9959767479399467]} | oracle match/draw 0.4370 any 32 first 24 rms 0.06971933865988993 oracle dist {'at_most_0.01': 0, 'at_most_0.1': 4, 'at_most_0.5': 34, 'attempts': 1000, 'structurally_valid': 966, 'without_structure': 0} | selected {'cfm_regression': 8.82787044923054, 'epoch': 126, 'phase_epoch': 125, 'weights': 'ema'}
+  s20261032 control N   4 S01   0 S5  30 C   4 I  34 {'geometry/decode': 4} | replay match/attempt 0.0780 @20 13 @1 3 table-given {'rate': 0.9772727272727273, 'successes': 43, 'trials': 44, 'wilson_95': [0.8819229030178671, 0.9959767479399467]} | oracle match/draw 0.4340 any 33 first 21 rms 0.053030265628701494 oracle dist {'at_most_0.01': 0, 'at_most_0.1': 0, 'at_most_0.5': 11, 'attempts': 1000, 'structurally_valid': 986, 'without_structure': 3} | selected {'cfm_regression': 10.312495993256451, 'epoch': 126, 'phase_epoch': 125, 'weights': 'ema'}
+  s20261032 smooth  N   0 S01   0 S5  44 C   0 I  44 {} | replay match/attempt 0.0800 @20 13 @1 3 table-given {'rate': 0.9772727272727273, 'successes': 43, 'trials': 44, 'wilson_95': [0.8819229030178671, 0.9959767479399467]} | oracle match/draw 0.4350 any 33 first 24 rms 0.059551331131986844 oracle dist {'at_most_0.01': 0, 'at_most_0.1': 4, 'at_most_0.5': 21, 'attempts': 1000, 'structurally_valid': 979, 'without_structure': 0} | selected {'cfm_regression': 10.315523336674087, 'epoch': 101, 'phase_epoch': 100, 'weights': 'ema'}
+
+P1: C summed over seeds: {'control': 12, 'smooth': 4} | quarter of control: 3.0 | holds: False
+    I summed over seeds: {'control': 127, 'smooth': 144}
+P2 invalid attempts per record (of 20): mean difference +0.1133, standard error 0.0535, ratio +2.12, records with a difference 19
+   collapsed attempts per record (of 20): mean difference -0.0533, standard error 0.0373, ratio -1.43, records with a difference 6
+P3 oracle match fraction: mean difference +0.0023, standard error 0.0033, ratio +0.71, records with a difference 17
+P3 replay match fraction: mean difference +0.0013, standard error 0.0009, ratio +1.43, records with a difference 2
+   oracle invalid draws per record (of 20): mean difference +0.1000, standard error 0.0549, ratio +1.82, records with a difference 9
+consistency: shared validation points 20
+
+consistency: largest |control s20261030 - run 2| over shared validation points: 0.0
+  control selected {'cfm_regression': 9.523490031719776, 'epoch': 151, 'phase_epoch': 150, 'weights': 'ema'} | run 2 selected {'cfm_regression': 9.523490031719776, 'epoch': 319, 'phase_epoch': 150, 'weights': 'ema'}
+  checkpoints: control c2a99ffb18e88e4c run 2 119e249ac6cb54d7
+P4 1518540c control: attempt 10 coordinate 0 largest |slope| 822.1 at t 0.9375; stage geometry/decode final eta 0.000000e+00 shortest None
+     slopes: 0.000:-105 0.125:-167 0.250:-145 0.375:-15 0.500:+120 0.625:+373 0.688:+593 0.750:+690 0.812:+736 0.875:+791 0.906:+769 0.938:+822 0.953:+780 0.969:+740 0.984:+652 1.000:+568
+P4 1518540c smooth: attempt 10 coordinate 0 largest |slope| 11.2 at t 0.8125; stage None final eta 4.219745e-02 shortest 1.6727525721187722
+     slopes: 0.000:-1 0.125:-2 0.250:-1 0.375:+1 0.500:+3 0.625:+7 0.688:+10 0.750:+11 0.812:+11 0.875:+11 0.906:+11 0.938:+11 0.953:+10 0.969:+9 0.984:+8 1.000:+7
+P4 8733cd61 control: attempt 2 coordinate 1 largest |slope| 238.3 at t 0.8125; stage None final eta 2.634494e-09 shortest 2.761108575485177e-08
+     slopes: 0.000:-70 0.125:-83 0.250:-71 0.375:-36 0.500:-4 0.625:+78 0.688:+157 0.750:+203 0.812:+238 0.875:+216 0.906:+170 0.938:+105 0.953:+56 0.969:+37 0.984:-8 1.000:-27
+P4 8733cd61 smooth: attempt 2 coordinate 1 largest |slope| 3.4 at t 0.8125; stage None final eta 9.975384e-01 shortest 0.025807409906276786
+     slopes: 0.000:-1 0.125:-1 0.250:-1 0.375:-0 0.500:+0 0.625:+1 0.688:+2 0.750:+3 0.812:+3 0.875:+3 0.906:+2 0.938:+1 0.953:+1 0.969:+0 0.984:-0 1.000:-0

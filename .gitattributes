@@ -1,0 +1,27 @@
+# Public release (git archive): the code, tests, docs and theory, the small evidence files
+# that tests and docstrings read, and the research log with its analysis scripts and
+# printed verdicts. Run logs, host-side outputs, review scratch, checkpoints, build trees
+# and data stay in the private repository.
+artifacts/** export-ignore
+dist_verified* export-ignore
+data export-ignore
+# A directory with export-ignore hides its whole subtree, so kept directories are unset too.
+artifacts/mp20_pilot_2026-09-14 -export-ignore
+artifacts/mp20_pilot_2026-09-14/** -export-ignore
+artifacts/mp20_pilot_2026-09-25 -export-ignore
+artifacts/b2_chart_support_2026-10-20 -export-ignore
+artifacts/research_2026-10-30 -export-ignore
+artifacts/research_2026-10-30/diagnostics -export-ignore
+artifacts/research_2026-10-30/diagnostics/ab_* -export-ignore
+artifacts/research_2026-10-30/diagnostics/pc10 -export-ignore
+artifacts/mp20_pilot_2026-09-25/preprocessing512_v6.json -export-ignore
+artifacts/b2_chart_support_2026-10-20/*.json -export-ignore
+artifacts/b2_chart_support_2026-10-20/*.py -export-ignore
+artifacts/research_2026-10-30/R1_LOG.md -export-ignore
+artifacts/research_2026-10-30/r1_coupling.py -export-ignore
+artifacts/research_2026-10-30/diagnostics/*.py -export-ignore
+artifacts/research_2026-10-30/diagnostics/README.md -export-ignore
+artifacts/research_2026-10-30/diagnostics/ab_*/*.py -export-ignore
+artifacts/research_2026-10-30/diagnostics/ab_*/*.json -export-ignore
+artifacts/research_2026-10-30/diagnostics/ab_*/*verdict*.txt -export-ignore
+artifacts/research_2026-10-30/diagnostics/pc10/*.sh -export-ignore

@@ -1,0 +1,40 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.coverage
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.venv/
+build/
+dist/
+checkpoints/
+runs/
+generated/
+*.pt
+*.pth
+*.safetensors
+
+# Local credentials and operating-system metadata must never be published.
+.DS_Store
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Historical benchmark redistribution/authorization review is not complete.
+# Acquisition scripts, hashes, source reviews and audit reports are tracked.
+data/benchmarks/
+data/pilots/
+data/source-bundles/
+data/research-pilots/
+
+# These local diagnostics contain derived real-structure coordinates, not just logs.
+artifacts/research_pilot_2026-10-12/portability-linux-r1.json
+artifacts/research_pilot_2026-10-12/portability-mac-r1.json
+artifacts/b2_chart_support_2026-10-20/b2_chart_support_tau1e-4.json
+artifacts/b2_chart_support_2026-10-20/b2_chart_support_tau1e-4_validation_seed20261020.json
+artifacts/b2_chart_support_2026-10-20/b2_loewner_lift_seed20260913.json
+artifacts/b2_chart_support_2026-10-20/b2_loewner_lift_seed20261020.json
+.venv-pymatgen-adapter/

@@ -1,0 +1,120 @@
+{
+  "records": [
+    {
+      "material_id": "mp-697047",
+      "observations": [
+        {
+          "basis_if_present": null,
+          "caller_line": 124,
+          "distance_to_bin_wall": [
+            0.19683837890625
+          ],
+          "quantum": 1e-10,
+          "uncertainty": 2.2242974515338856e-11,
+          "uncertainty_in_bins": 0.22242974515338856,
+          "values": [
+            52.35953968133032
+          ],
+          "vector_if_present": [
+            1,
+            2,
+            0
+          ]
+        }
+      ],
+      "reason": "primitive canonical representative intersects a ranking-bin boundary",
+      "status": "reproduced_rejection"
+    },
+    {
+      "material_id": "mp-634945",
+      "observations": [
+        {
+          "basis_if_present": [
+            [
+              0,
+              0,
+              -1
+            ],
+            [
+              0,
+              -1,
+              1
+            ],
+            [
+              -1,
+              1,
+              0
+            ]
+          ],
+          "caller_line": 163,
+          "distance_to_bin_wall": [
+            0.054901123046875,
+            0.5,
+            0.054901123046875
+          ],
+          "quantum": 1e-10,
+          "uncertainty": 1.029177322089038e-11,
+          "uncertainty_in_bins": 0.1029177322089038,
+          "values": [
+            -13.94024688525549,
+            0.0,
+            -13.94024688525549
+          ],
+          "vector_if_present": [
+            3,
+            3,
+            3
+          ]
+        }
+      ],
+      "reason": "primitive canonical representative intersects a ranking-bin boundary",
+      "status": "reproduced_rejection"
+    },
+    {
+      "material_id": "mp-1226790",
+      "observations": [
+        {
+          "basis_if_present": [
+            [
+              0,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              0,
+              -1
+            ],
+            [
+              0,
+              0,
+              -1
+            ]
+          ],
+          "caller_line": 163,
+          "distance_to_bin_wall": [
+            0.5,
+            0.0121917724609375,
+            0.0382080078125
+          ],
+          "quantum": 1e-10,
+          "uncertainty": 2.294255142662574e-11,
+          "uncertainty_in_bins": 0.22942551426625737,
+          "values": [
+            0.0,
+            7.682274910748781,
+            15.434979155246179
+          ],
+          "vector_if_present": [
+            3,
+            3,
+            4
+          ]
+        }
+      ],
+      "reason": "primitive canonical representative intersects a ranking-bin boundary",
+      "status": "reproduced_rejection"
+    }
+  ],
+  "unchanged_guard_called": true
+}

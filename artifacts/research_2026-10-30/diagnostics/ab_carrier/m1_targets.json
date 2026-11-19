@@ -1,0 +1,367 @@
+{
+ "rule": "attempts with no structure or a shortest distance at most 0.8 angstrom in any of the six replay files",
+ "files": [
+  "replay_control_s20261030.json",
+  "replay_control_s20261031.json",
+  "replay_control_s20261032.json",
+  "replay_smooth_s20261030.json",
+  "replay_smooth_s20261031.json",
+  "replay_smooth_s20261032.json"
+ ],
+ "replay": {
+  "0066ad6a3babb48284d7bf75e659247eac96a2c0c97579f2a193ac75de28f02a": [
+   0,
+   1,
+   2,
+   10,
+   13
+  ],
+  "01eca71c8ad816f6b7f7d639bd27eb1122d01de399dbb2fe85bbaa42ed7978ec": [
+   16
+  ],
+  "10c6e7e82f675332de823639b7bfb3d6a4e392200f9ea6ee520048034d096cd7": [
+   0,
+   3,
+   5,
+   6,
+   7,
+   8,
+   10,
+   11,
+   14,
+   16,
+   18
+  ],
+  "1518540c82157b131a723c57606a21dfa71e7abf32efbcd0d96f1397c34babc6": [
+   0,
+   8,
+   10,
+   12,
+   13,
+   17
+  ],
+  "1e28adcebb74e1cd14d2c59a7012aaa5f54860d192f651bb4d0fd7286355e0eb": [
+   0,
+   1,
+   2,
+   7,
+   8,
+   12,
+   13,
+   14
+  ],
+  "2c3df41b24f03b14d1ef3ae29f9c25ac6d63ccf99621171b018fbde90011683c": [
+   1,
+   16
+  ],
+  "360c96831bb6e363a6e8e5edf488b3fbd06cb6c7d690769ed968a49bf58e12b7": [
+   1,
+   3,
+   6,
+   7,
+   9,
+   11,
+   14
+  ],
+  "430e09f5fe0680589fc92181c9abd441e30e9bc74fab0978a4498697f54a9d6a": [
+   6
+  ],
+  "4ab5a558528eb043bcf4e1a7a0e4a5a9bc50c2eecd648a8d8941ae6754ce1a7d": [
+   0,
+   17
+  ],
+  "55a38f32ac6daa84166bfa52428e255714c1211e2aa57542bd53b52b033ff46f": [
+   2,
+   8,
+   19
+  ],
+  "6d5d091a1081eb7efb217b8e3b33d3fcc7aaaf3d865f23a261eac5cbe6bc1a06": [
+   2,
+   12
+  ],
+  "75fc9d14109951261afd9ab545027160fd4b2d47b1c755d006e77132c341db9a": [
+   0,
+   8,
+   14
+  ],
+  "782a5e4a0ddd02559d22d703481d4c1a3941880934e7ae22bcec9553d36c00fd": [
+   3,
+   11,
+   14,
+   15
+  ],
+  "8512e18b15fa3e6905d6b1161455c55f2e27525229b02744bbb6510a9bf90179": [
+   1,
+   4
+  ],
+  "86d7d3c94d64fe180a0ef77eae5dcb0b9a4f1c58e77805904b31d2b8a405bc95": [
+   16
+  ],
+  "8733cd612059d4f7a5ac7cbc1c5011f715f70ac2326c5d86251539960c346ea2": [
+   4,
+   5,
+   7,
+   11,
+   15
+  ],
+  "88dc9008a48eeeb0f081fe85889b17dae36e4ef72c4e2227640aa7acae48cd62": [
+   0,
+   1,
+   3,
+   15
+  ],
+  "8f6174bdff3830d332da47f45477b92355dd3298f0bed063196eadbe6dc0916f": [
+   3
+  ],
+  "93247212259c27e47d16738a7a00942ad107516df8085600e0753bc775e156a9": [
+   1,
+   6,
+   9,
+   17,
+   18,
+   19
+  ],
+  "93ebf3b3d2844c33ccc9ba9f32b617726d9417fd12c147533f7bdf775b5cddae": [
+   2,
+   4,
+   5,
+   7,
+   14,
+   16,
+   17
+  ],
+  "9595947a1742fff329711f5dd32642fe5e8c3d6e5175cf6a7ebb5627614934b5": [
+   3,
+   9,
+   11,
+   12,
+   14,
+   17
+  ],
+  "9be20999ca3d81bee2ee296620412305d74c7cd58f7922f4b25292a663120c2a": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   7,
+   10,
+   11,
+   13,
+   16,
+   17,
+   18,
+   19
+  ],
+  "b75ea520d4fc55f54a3e66863002a339fa2fc43c14f9ace63cc14d4f9da9f903": [
+   0,
+   3,
+   4
+  ],
+  "ba894d37613a97d5b3dd77e4d7eb9f6717b054d68ce966ba2e5befb35c9039a1": [
+   4,
+   13
+  ],
+  "c05ade752693629086ad334c1330b5ac6e9c812e74d4bad2e0042463b4dd52fc": [
+   3,
+   16,
+   17,
+   19
+  ],
+  "c09768cc657739fee34f6802b12786883bfb3d26fdc3f25e7fae5600e5ad1c61": [
+   8
+  ],
+  "c1f46b08b53fe39c5da54ce6b89a7dd10a8546cee978041722833d07922b1394": [
+   1,
+   7,
+   11
+  ],
+  "c8a296b717a333c09570ab443dfc136ae1091c03fd17c171640c09fb2fe76f41": [
+   2
+  ],
+  "ceca8bd868afcb5b77df1e7a207cf44d8297c9e0d707b136ed8eb09f2fadc1ed": [
+   0,
+   18
+  ],
+  "d5bbc848f8cb77321dad29b1b91cf404cc94f1b091b5890f7eb8a36fb48ed5c0": [
+   2,
+   10,
+   12,
+   13
+  ],
+  "d8d272b62aab22ae53b9a7014e978f849820f58e7cea3fb7eb452f39c1a2fe9c": [
+   11,
+   16
+  ],
+  "dc32959ac29c3e930724de929934d4e209281fb40ce245acf09d36d36c1a6237": [
+   13
+  ],
+  "dcf687c28a60a425b40c3c59373949af8bf837c284ec6c5cbeb9edb004e8bfc8": [
+   17,
+   19
+  ],
+  "f0a903b9321dc6aa24d58fa05df20153c0c5b53ffe104f78189cfc31529d6df1": [
+   6,
+   7,
+   13
+  ],
+  "f9156092d9f0bb22224e56056f49a025815eb0725730f6a34bc9469410722fcd": [
+   0
+  ],
+  "fe5c582bc83f6739658a8e62e2bbe4d828d2eadcb98414bbd9801becbbe1e8c9": [
+   7,
+   8
+  ]
+ },
+ "oracle": {
+  "01eca71c8ad816f6b7f7d639bd27eb1122d01de399dbb2fe85bbaa42ed7978ec": [
+   19
+  ],
+  "10c6e7e82f675332de823639b7bfb3d6a4e392200f9ea6ee520048034d096cd7": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19
+  ],
+  "360c96831bb6e363a6e8e5edf488b3fbd06cb6c7d690769ed968a49bf58e12b7": [
+   3,
+   4,
+   7,
+   9,
+   10,
+   11,
+   14,
+   15
+  ],
+  "430e09f5fe0680589fc92181c9abd441e30e9bc74fab0978a4498697f54a9d6a": [
+   8,
+   15,
+   19
+  ],
+  "4ab5a558528eb043bcf4e1a7a0e4a5a9bc50c2eecd648a8d8941ae6754ce1a7d": [
+   4,
+   8,
+   11,
+   15
+  ],
+  "8733cd612059d4f7a5ac7cbc1c5011f715f70ac2326c5d86251539960c346ea2": [
+   1,
+   2,
+   3,
+   6,
+   7,
+   8,
+   9,
+   11,
+   12,
+   14,
+   15,
+   17,
+   19
+  ],
+  "88dc9008a48eeeb0f081fe85889b17dae36e4ef72c4e2227640aa7acae48cd62": [
+   0,
+   3,
+   4,
+   6,
+   7,
+   8,
+   11,
+   13,
+   15,
+   16,
+   19
+  ],
+  "93247212259c27e47d16738a7a00942ad107516df8085600e0753bc775e156a9": [
+   0
+  ],
+  "93ebf3b3d2844c33ccc9ba9f32b617726d9417fd12c147533f7bdf775b5cddae": [
+   3,
+   4,
+   6,
+   18
+  ],
+  "9595947a1742fff329711f5dd32642fe5e8c3d6e5175cf6a7ebb5627614934b5": [
+   1,
+   3,
+   5,
+   7,
+   8,
+   9
+  ],
+  "9be20999ca3d81bee2ee296620412305d74c7cd58f7922f4b25292a663120c2a": [
+   0,
+   1,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   18,
+   19
+  ],
+  "c1f46b08b53fe39c5da54ce6b89a7dd10a8546cee978041722833d07922b1394": [
+   4,
+   11,
+   15
+  ],
+  "c68be00a002c652bda76d5a01007a3a039019d146f9786852d53d5f930d682ea": [
+   0,
+   11,
+   16,
+   19
+  ],
+  "ec33a7d7bd9b1a92696caa5bebe3b6e00cc9e1e5ac573ce4a2d8a90eb16b3829": [
+   0,
+   1,
+   4,
+   8,
+   11,
+   12,
+   13,
+   14,
+   17,
+   18,
+   19
+  ],
+  "f0a903b9321dc6aa24d58fa05df20153c0c5b53ffe104f78189cfc31529d6df1": [
+   11,
+   16
+  ],
+  "fbf8a5277185916c05cbeb031f8f42e541d08f88ed84a728b1d1a22c8661197f": [
+   4,
+   9
+  ]
+ },
+ "counts": {
+  "replay": 131,
+  "oracle": 111,
+  "replay_records": 36,
+  "oracle_records": 16
+ }
+}

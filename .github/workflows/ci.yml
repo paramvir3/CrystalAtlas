@@ -1,0 +1,53 @@
+name: crystalatlas-ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - run: python -m pip install --upgrade pip
+      # Keep the pinned numerical crystallography boundary active in CI;
+      # otherwise its regressions silently skip when spglib is absent.
+      - run: python -m pip install -e '.[crystallography,dev]'
+      - run: ruff check src tests
+      # This is the currently certified strict-typing surface. NumPy-heavy
+      # crystallographic kernels and the optional dynamic-Torch modules remain
+      # runtime/property tested until their full annotations are completed.
+      - run: >-
+          mypy --follow-imports=skip
+          src/crystalatlas/config.py
+          src/crystalatlas/errors.py
+          src/crystalatlas/elements.py
+          src/crystalatlas/provenance.py
+          src/crystalatlas/runtime.py
+          src/crystalatlas/cover_legality.py
+          src/crystalatlas/physical_matching.py
+          src/crystalatlas/physical_validity.py
+          src/crystalatlas/symmetry_descriptors.py
+      - run: pytest --cov=crystalatlas --cov-report=term-missing
+
+  ml-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -e '.[ml,crystallography,dev]'
+      - run: pytest -m ml

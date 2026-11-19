@@ -1,0 +1,39 @@
+M3: field control_s20261030, m3 script d81edefdf1ff, m2 5adfad80bc2d, m1 1f8332a87fc8; single-member fallback solves 0; failed padded solves 0; start blocks changed by the final recomputation 0
+script checks: {'capped': 0, 'cover_differs_from_m2': 0, 'first_start_differs_from_m2': 0, 'm2_near_not_redrawn': 0, 'not_redrawn': 1849, 'not_redrawn_outcome_differs': 0, 'not_redrawn_validity_or_match_differs': 0, 'redrawn_not_m2_near': 0, 'redrawn_oracle': 60, 'redrawn_replay': 91, 'start_differs_from_m2': 0, 'start_not_equal_accepted': 0, 'unsolved_m2_near': 0, 'unsolved_other': 0}
+every redrawn attempt is an M2 near start and every solved M2 near start is redrawn; every first draw equals M2's start; every start not redrawn equals M2's; covers equal M2's
+near starts unsolved in M3 (their redrawn start failed its padded solve; the fallback integrated the first draw): []
+other attempts unsolved in M3: []
+redrawn but still near at the draw cap: []
+unsolved attempts 0, single-member fallback solves 0
+cases used 50 of 50; left out (no near start and not reproduced): []
+attempts not redrawn: 1849; outcome differs from the stored replay: 0; validity or match differs: 0; largest |shortest difference|: 0 angstrom
+
+near replay states: 91; paired 91; left out at the draw cap 0; redraw failed its padded solve (counted invalid) 0
+   invalid first draw and redraw: 10; first draw only: 28; redraw only: 4; neither: 49
+   invalid: first draw 38 / 91 = 0.418; redraw 14 / 91 = 0.154
+   R = 14 / 38 = 0.3684; exact McNemar two-sided p = 1.93e-05 (discordant 28 against 4)
+REGISTERED DECISION: (S) the near start causes most of its invalid outcomes
+
+== reported
+R, record bootstrap (2000 resamples of the 37 records, random.Random(20261115).choices, 2000 with an invalid first draw): 95 % 0.224 to 0.533
+near replay states matched: first draw 1, redraw 0 of 91
+records holding paired near states: 37; fewer invalid after the redraw in 18, more in 1, equal in 18; sign test p = 7.63e-05
+reference: far replay starts of the same records, first draw invalid 5 / 649 = 0.008
+whole replay arm, stored replay against M3: {'attempts': 1000, 'without structure': 5, 'structurally valid': 956, 'matched': 82, 'records with a match': 13} against {'attempts': 1000, 'without structure': 0, 'structurally valid': 980, 'matched': 81, 'records with a match': 13}
+whole oracle arm, stored replay against M3: {'attempts': 1000, 'without structure': 3, 'structurally valid': 975, 'matched': 443, 'records with a match': 32} against {'attempts': 1000, 'without structure': 0, 'structurally valid': 984, 'matched': 453, 'records with a match': 32}
+oracle first-draw matches: 25 against 25
+replay failed stages: {'geometry/decode': 5} against {}
+oracle failed stages: {'geometry/decode': 3} against {}
+near oracle draws: 60; invalid 17 against 8 (McNemar p 0.00391); matched 2 against 12 (gained 10, lost 0, McNemar p 0.00195)
+   prediction from the far draws of the same records: invalid 3.8, matched 12.2
+near replay states, shared one-parameter axis True: invalid first draw 36 / 69 = 0.522, redraw 14 / 69 = 0.203
+near replay states, shared one-parameter axis False: invalid first draw 2 / 22 = 0.091, redraw 0 / 22 = 0.000
+draws per redrawn attempt (151): median 2, mean 2.62, max 9; 2: 107, 3 to 5: 35, 6 to 10: 9, above 10: 0
+used start unresolved at 4 angstrom (decided by the exact search at 0.1): 0, redraw invalid 0
+used start d0 (0.1, 0.3]: near replay states 50, redraw invalid 13
+used start d0 (0.3, 0.5]: near replay states 11, redraw invalid 0
+used start d0 (0.5, 1.0]: near replay states 13, redraw invalid 1
+used start d0 (1.0, 4.0]: near replay states 17, redraw invalid 0
+used start d0 above 4.0: near replay states 0, redraw invalid 0
+volume per atom, used start over first draw: median 1.211
+invalid redraws with a solved start: 14; closest class at the end equals the closest class of the first draw in 1

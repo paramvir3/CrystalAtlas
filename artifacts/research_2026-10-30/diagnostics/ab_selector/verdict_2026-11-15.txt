@@ -1,0 +1,78 @@
+######## selector-symmetry
+== selection (validation cover NLL of the selected checkpoint)
+control            20261030 selected 7.408974 epoch  9 raw evaluations 120 last epoch 60 diagnostic validation total 7.408974 gap -2.38e-09
+control            20261031 selected 7.252371 epoch 10 raw evaluations 120 last epoch 60 diagnostic validation total 7.252371 gap +1.19e-09
+control            20261032 selected 7.322977 epoch 12 raw evaluations 120 last epoch 60 diagnostic validation total 7.322977 gap +2.26e-08
+selector-symmetry  20261030 selected 7.266113 epoch 14 raw evaluations 120 last epoch 60 diagnostic validation total 7.266112 gap -4.17e-08
+selector-symmetry  20261031 selected 7.224605 epoch 10 raw evaluations 120 last epoch 60 diagnostic validation total 7.224605 gap -6.68e-08
+selector-symmetry  20261032 selected 7.430126 epoch  9 raw evaluations 120 last epoch 60 diagnostic validation total 7.430126 gap +3.58e-09
+== P1
+mean control 7.328107 mean selector-symmetry 7.306948
+treatment minus control -0.02116 per seed [-0.142862, -0.027766, 0.107149]
+P1 holds (at least 0.2 nats lower): False
+== test: per-record difference treatment minus control, averaged over seeds
+group control 2.6165 selector-symmetry 2.6278 difference +0.0113 standard error 0.0310 two standard errors 0.0619 ratio +0.36 per seed [-0.0098, 0.0249, 0.0187]
+nu    control 1.6732 selector-symmetry 1.6434 difference -0.0298 standard error 0.0153 two standard errors 0.0305 ratio -1.95 per seed [0.0519, -0.0035, -0.1377]
+row   control 3.2770 selector-symmetry 3.1322 difference -0.1447 standard error 0.0848 two standard errors 0.1695 ratio -1.71 per seed [-0.2391, -0.0173, -0.1778]
+total control 7.5666 selector-symmetry 7.4034 difference -0.1632 standard error 0.0922 two standard errors 0.1844 ratio -1.77 per seed [-0.197, 0.004, -0.2967]
+P2 holds (negative, magnitude above two standard errors): False
+== validation: per-record difference treatment minus control, averaged over seeds
+group control 2.4054 selector-symmetry 2.3649 difference -0.0405 standard error 0.0152 two standard errors 0.0304 ratio -2.67 per seed [-0.0848, -0.0298, -0.0068]
+nu    control 1.9010 selector-symmetry 1.8968 difference -0.0042 standard error 0.0158 two standard errors 0.0317 ratio -0.27 per seed [0.1332, -0.0004, -0.1454]
+row   control 3.0217 selector-symmetry 3.0453 difference +0.0235 standard error 0.0271 two standard errors 0.0542 ratio +0.87 per seed [-0.1912, 0.0024, 0.2594]
+total control 7.3281 selector-symmetry 7.3069 difference -0.0212 standard error 0.0314 two standard errors 0.0627 ratio -0.67 per seed [-0.1429, -0.0278, 0.1071]
+== ranks on test (mean over seeds)
+control            group top1 0.413 top5 0.593 nu top1 0.247 rows all maximal 0.353 mean row errors 1.200
+selector-symmetry  group top1 0.413 top5 0.587 nu top1 0.227 rows all maximal 0.327 mean row errors 1.233
+######## selector-rows
+== selection (validation cover NLL of the selected checkpoint)
+control            20261030 selected 7.408974 epoch  9 raw evaluations 120 last epoch 60 diagnostic validation total 7.408974 gap -2.38e-09
+control            20261031 selected 7.252371 epoch 10 raw evaluations 120 last epoch 60 diagnostic validation total 7.252371 gap +1.19e-09
+control            20261032 selected 7.322977 epoch 12 raw evaluations 120 last epoch 60 diagnostic validation total 7.322977 gap +2.26e-08
+selector-rows      20261030 selected 7.361663 epoch  9 raw evaluations 120 last epoch 60 diagnostic validation total 7.361663 gap +3.70e-08
+selector-rows      20261031 selected 7.213268 epoch  8 raw evaluations 120 last epoch 60 diagnostic validation total 7.213268 gap -4.29e-08
+selector-rows      20261032 selected 7.429909 epoch  9 raw evaluations 120 last epoch 60 diagnostic validation total 7.429909 gap -5.01e-08
+== P1
+mean control 7.328107 mean selector-rows 7.334947
+treatment minus control 0.006839 per seed [-0.047311, -0.039102, 0.106932]
+P1 holds (at least 0.2 nats lower): False
+== test: per-record difference treatment minus control, averaged over seeds
+group control 2.6165 selector-rows 2.6230 difference +0.0065 standard error 0.0146 two standard errors 0.0292 ratio +0.45 per seed [0.0031, 0.0189, -0.0024]
+nu    control 1.6732 selector-rows 1.6115 difference -0.0617 standard error 0.0178 two standard errors 0.0355 ratio -3.47 per seed [-0.0058, -0.0466, -0.1326]
+row   control 3.2770 selector-rows 3.2259 difference -0.0511 standard error 0.0860 two standard errors 0.1721 ratio -0.59 per seed [-0.1009, 0.1193, -0.1717]
+total control 7.5666 selector-rows 7.4604 difference -0.1063 standard error 0.0865 two standard errors 0.1730 ratio -1.23 per seed [-0.1036, 0.0916, -0.3067]
+P2 holds (negative, magnitude above two standard errors): False
+== validation: per-record difference treatment minus control, averaged over seeds
+group control 2.4054 selector-rows 2.4188 difference +0.0134 standard error 0.0137 two standard errors 0.0273 ratio +0.98 per seed [0.0003, 0.0078, 0.0321]
+nu    control 1.9010 selector-rows 1.8314 difference -0.0695 standard error 0.0205 two standard errors 0.0411 ratio -3.39 per seed [-0.0108, -0.056, -0.1419]
+row   control 3.0217 selector-rows 3.0847 difference +0.0630 standard error 0.0464 two standard errors 0.0928 ratio +1.36 per seed [-0.0368, 0.0091, 0.2167]
+total control 7.3281 selector-rows 7.3349 difference +0.0068 standard error 0.0527 two standard errors 0.1054 ratio +0.13 per seed [-0.0473, -0.0391, 0.1069]
+== ranks on test (mean over seeds)
+control            group top1 0.413 top5 0.593 nu top1 0.247 rows all maximal 0.353 mean row errors 1.200
+selector-rows      group top1 0.413 top5 0.593 nu top1 0.240 rows all maximal 0.313 mean row errors 1.247
+######## dropout
+== selection (validation cover NLL of the selected checkpoint)
+control            20261030 selected 7.408974 epoch  9 raw evaluations 120 last epoch 60 diagnostic validation total 7.408974 gap -2.38e-09
+control            20261031 selected 7.252371 epoch 10 raw evaluations 120 last epoch 60 diagnostic validation total 7.252371 gap +1.19e-09
+control            20261032 selected 7.322977 epoch 12 raw evaluations 120 last epoch 60 diagnostic validation total 7.322977 gap +2.26e-08
+dropout            20261030 selected 7.413782 epoch  9 raw evaluations 120 last epoch 60 diagnostic validation total 7.413782 gap +2.03e-08
+dropout            20261031 selected 7.269154 epoch  8 raw evaluations 120 last epoch 60 diagnostic validation total 7.269154 gap -7.15e-09
+dropout            20261032 selected 7.310494 epoch 15 raw evaluations 120 last epoch 60 diagnostic validation total 7.310494 gap +0.00e+00
+== P1
+mean control 7.328107 mean dropout 7.331144
+treatment minus control 0.003036 per seed [0.004808, 0.016783, -0.012483]
+P1 holds (at least 0.2 nats lower): False
+== test: per-record difference treatment minus control, averaged over seeds
+group control 2.6165 dropout 2.6295 difference +0.0130 standard error 0.0054 two standard errors 0.0107 ratio +2.42 per seed [0.0003, 0.0151, 0.0235]
+nu    control 1.6732 dropout 1.6696 difference -0.0035 standard error 0.0157 two standard errors 0.0315 ratio -0.23 per seed [-0.0024, -0.0498, 0.0416]
+row   control 3.2770 dropout 3.2981 difference +0.0211 standard error 0.0141 two standard errors 0.0281 ratio +1.50 per seed [0.0005, 0.0459, 0.0168]
+total control 7.5666 dropout 7.5972 difference +0.0305 standard error 0.0180 two standard errors 0.0361 ratio +1.69 per seed [-0.0015, 0.0112, 0.082]
+P2 holds (negative, magnitude above two standard errors): False
+== validation: per-record difference treatment minus control, averaged over seeds
+group control 2.4054 dropout 2.4074 difference +0.0020 standard error 0.0048 two standard errors 0.0095 ratio +0.42 per seed [0.0001, 0.0105, -0.0045]
+nu    control 1.9010 dropout 1.8892 difference -0.0118 standard error 0.0154 two standard errors 0.0307 ratio -0.77 per seed [-0.0017, -0.0639, 0.0302]
+row   control 3.0217 dropout 3.0346 difference +0.0128 standard error 0.0163 two standard errors 0.0325 ratio +0.79 per seed [0.0065, 0.0702, -0.0382]
+total control 7.3281 dropout 7.3311 difference +0.0030 standard error 0.0230 two standard errors 0.0459 ratio +0.13 per seed [0.0048, 0.0168, -0.0125]
+== ranks on test (mean over seeds)
+control            group top1 0.413 top5 0.593 nu top1 0.247 rows all maximal 0.353 mean row errors 1.200
+dropout            group top1 0.413 top5 0.600 nu top1 0.267 rows all maximal 0.353 mean row errors 1.200

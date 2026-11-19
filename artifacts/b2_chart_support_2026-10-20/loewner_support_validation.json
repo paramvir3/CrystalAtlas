@@ -1,0 +1,140 @@
+{
+ "rule": "M = ceil(2 (max_A lambda_max(log W) + 0.25)) / 2; l(N) = s_min^2/lambda_min(G0(N))",
+ "s_min_angstrom": 0.75,
+ "fitted_M": 4.5,
+ "fit_records": 506,
+ "validation_records": 506,
+ "validation_overlap_excluded": 10,
+ "fit_coverage": {
+  "triclinic": {
+   "n": 27,
+   "loewner_inside": 27,
+   "loewner_rate": 1.0,
+   "ball_inside": 26,
+   "min_floor_slack": 2.82,
+   "max_log_upper": 1.297
+  },
+  "monoclinic": {
+   "n": 76,
+   "loewner_inside": 76,
+   "loewner_rate": 1.0,
+   "ball_inside": 67,
+   "min_floor_slack": 2.651,
+   "max_log_upper": 2.229
+  },
+  "orthorhombic": {
+   "n": 106,
+   "loewner_inside": 106,
+   "loewner_rate": 1.0,
+   "ball_inside": 89,
+   "min_floor_slack": 2.667,
+   "max_log_upper": 3.433
+  },
+  "tetragonal": {
+   "n": 84,
+   "loewner_inside": 84,
+   "loewner_rate": 1.0,
+   "ball_inside": 72,
+   "min_floor_slack": 2.625,
+   "max_log_upper": 2.539
+  },
+  "trigonal": {
+   "n": 63,
+   "loewner_inside": 63,
+   "loewner_rate": 1.0,
+   "ball_inside": 36,
+   "min_floor_slack": 2.02,
+   "max_log_upper": 4.111
+  },
+  "hexagonal": {
+   "n": 40,
+   "loewner_inside": 40,
+   "loewner_rate": 1.0,
+   "ball_inside": 33,
+   "min_floor_slack": 1.718,
+   "max_log_upper": 3.161
+  },
+  "cubic": {
+   "n": 110,
+   "loewner_inside": 110,
+   "loewner_rate": 1.0,
+   "ball_inside": 110,
+   "min_floor_slack": 2.758,
+   "max_log_upper": 1.009
+  },
+  "all": {
+   "n": 506,
+   "loewner_inside": 506,
+   "loewner_rate": 1.0,
+   "ball_inside": 433,
+   "min_floor_slack": 1.718,
+   "max_log_upper": 4.111
+  }
+ },
+ "held_out_coverage": {
+  "triclinic": {
+   "n": 39,
+   "loewner_inside": 39,
+   "loewner_rate": 1.0,
+   "ball_inside": 37,
+   "min_floor_slack": 2.111,
+   "max_log_upper": 1.944
+  },
+  "monoclinic": {
+   "n": 74,
+   "loewner_inside": 74,
+   "loewner_rate": 1.0,
+   "ball_inside": 69,
+   "min_floor_slack": 2.707,
+   "max_log_upper": 1.803
+  },
+  "orthorhombic": {
+   "n": 86,
+   "loewner_inside": 86,
+   "loewner_rate": 1.0,
+   "ball_inside": 75,
+   "min_floor_slack": 2.606,
+   "max_log_upper": 2.267
+  },
+  "tetragonal": {
+   "n": 99,
+   "loewner_inside": 99,
+   "loewner_rate": 1.0,
+   "ball_inside": 86,
+   "min_floor_slack": 2.409,
+   "max_log_upper": 2.797
+  },
+  "trigonal": {
+   "n": 42,
+   "loewner_inside": 42,
+   "loewner_rate": 1.0,
+   "ball_inside": 28,
+   "min_floor_slack": 1.913,
+   "max_log_upper": 3.885
+  },
+  "hexagonal": {
+   "n": 46,
+   "loewner_inside": 46,
+   "loewner_rate": 1.0,
+   "ball_inside": 45,
+   "min_floor_slack": 2.343,
+   "max_log_upper": 2.202
+  },
+  "cubic": {
+   "n": 110,
+   "loewner_inside": 110,
+   "loewner_rate": 1.0,
+   "ball_inside": 110,
+   "min_floor_slack": 2.716,
+   "max_log_upper": 0.639
+  },
+  "all": {
+   "n": 496,
+   "loewner_inside": 496,
+   "loewner_rate": 1.0,
+   "ball_inside": 450,
+   "min_floor_slack": 1.913,
+   "max_log_upper": 3.885
+  }
+ }
+}

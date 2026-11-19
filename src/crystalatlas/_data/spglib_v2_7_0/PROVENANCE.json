@@ -1,0 +1,14 @@
+{
+  "schema": "crystalatlas.third-party-crystallographic-source.v1",
+  "name": "spglib crystallographic database",
+  "version": "2.7.0",
+  "git_commit": "12355c77fb7c505a55f52cae36341d73b781a065",
+  "repository": "https://github.com/spglib/spglib",
+  "license": "BSD-3-Clause",
+  "selection_rule": "smallest Hall number for each International space-group number",
+  "files": {
+    "COPYING": "9c4e602ce15bf48206dad105b666ddaeedba747eeda6465807106bc11f4f587f",
+    "Wyckoff.csv": "d3d786a1f0187e5c6d69a3ade35648ffab34fd1b977d61ad84d8b0434b8b7ca0",
+    "spg.csv": "4457df1042b14a65ea62af0bad7b5b609a4fc33592df245802cfe005b221f95e"
+  }
+}
